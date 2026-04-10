@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F64C56C-26EF-426E-B229-7F6047105974}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MobilBankacılık</RootNamespace>
+    <AssemblyName>MobilBankacılık</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltınAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltınAl.Designer.cs">
+      <DependentUpon>AltınAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltınSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltınSat.Designer.cs">
+      <DependentUpon>AltınSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doviz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hesaplar.Designer.cs">
+      <DependentUpon>Hesaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapOluştur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapOluştur.Designer.cs">
+      <DependentUpon>HesapOluştur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapOzeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapOzeti.Designer.cs">
+      <DependentUpon>HesapOzeti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartOlustur.Designer.cs">
+      <DependentUpon>KartOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odemeler.Designer.cs">
+      <DependentUpon>Odemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaTransferi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaTransferi.Designer.cs">
+      <DependentUpon>ParaTransferi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasarim.cs" />
+    <Compile Include="Veritabani.cs" />
+    <EmbeddedResource Include="AltınAl.resx">
+      <DependentUpon>AltınAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltınSat.resx">
+      <DependentUpon>AltınSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hesaplar.resx">
+      <DependentUpon>Hesaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapOluştur.resx">
+      <DependentUpon>HesapOluştur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapOzeti.resx">
+      <DependentUpon>HesapOzeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartOlustur.resx">
+      <DependentUpon>KartOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odemeler.resx">
+      <DependentUpon>Odemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaTransferi.resx">
+      <DependentUpon>ParaTransferi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
